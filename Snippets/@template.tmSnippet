@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>&lt;% @template alias_opt fullName_opt %&gt;</string>
+	<string>&lt;% @template ${1:alias_opt fullName_opt} %&gt;</string>
 	<key>name</key>
 	<string>@template</string>
 	<key>scope</key>

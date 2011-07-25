@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>&lt;% @inherits alias_opt fullName_opt %&gt;
+	<string>&lt;% @inherits ${1:name_opt fullName_opt} %&gt;
 </string>
 	<key>name</key>
 	<string>@inherits</string>

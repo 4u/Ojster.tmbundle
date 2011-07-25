@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>&lt;% @require alias = ${1:'path'.subpath} ${2:fullName} %&gt;</string>
+	<string>&lt;% @require alias = ${1:'path'.subpath} ${2:fullName..subname} %&gt;</string>
 	<key>name</key>
 	<string>@require</string>
 	<key>scope</key>
