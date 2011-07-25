@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;% @require alias = ${1:'path'.subpath} ${2:fullName} %&gt;</string>
+	<key>name</key>
+	<string>@require</string>
+	<key>scope</key>
+	<string>source.ojst</string>
+	<key>tabTrigger</key>
+	<string>@r</string>
+	<key>uuid</key>
+	<string>D12E89CE-A8F1-4E16-B85F-4ABC5BF6E9E1</string>
+</dict>
+</plist>

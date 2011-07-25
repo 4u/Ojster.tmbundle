@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>mainMenu</key>
+	<dict>
+		<key>items</key>
+		<array>
+			<string>A1564195-FCFA-4442-A526-D394DF6F0A0E</string>
+			<string>------------------------------------</string>
+			<string>A15ECB89-243D-48C8-9389-D73676340741</string>
+			<string>D12E89CE-A8F1-4E16-B85F-4ABC5BF6E9E1</string>
+			<string>27651627-29FD-4369-89F1-84C24ED1AD9C</string>
+			<string>0B2B86C2-B07A-4DA6-BE3F-E1955C6D1031</string>
+			<string>9ED0104E-7A2E-4981-AB45-9D75DEDCA822</string>
+			<string>7B7CFAFF-BCF4-40BD-BF0F-F073F29C9A0F</string>
+		</array>
+		<key>submenus</key>
+		<dict/>
+	</dict>
+	<key>name</key>
+	<string>Ojster</string>
+	<key>ordering</key>
+	<array>
+		<string>5914FA48-99FB-4790-95D4-7ABF198273E1</string>
+		<string>A1564195-FCFA-4442-A526-D394DF6F0A0E</string>
+		<string>4629EA7A-D973-4502-B973-7FF29195ECC5</string>
+		<string>436464A9-6F3F-41A4-BB40-FFBE738DA036</string>
+		<string>0AA26CB8-18B3-4636-B318-6EBF8C5A16C0</string>
+		<string>21511C36-EAF4-478D-AD8D-1207F54A5D9C</string>
+		<string>02D57FAA-6626-42D3-BED2-7ABE0EEA9646</string>
+		<string>7B7CFAFF-BCF4-40BD-BF0F-F073F29C9A0F</string>
+		<string>A15ECB89-243D-48C8-9389-D73676340741</string>
+		<string>D12E89CE-A8F1-4E16-B85F-4ABC5BF6E9E1</string>
+		<string>27651627-29FD-4369-89F1-84C24ED1AD9C</string>
+		<string>0B2B86C2-B07A-4DA6-BE3F-E1955C6D1031</string>
+		<string>9ED0104E-7A2E-4981-AB45-9D75DEDCA822</string>
+	</array>
+	<key>uuid</key>
+	<string>19F31E96-BB07-47E2-A21D-29618545510F</string>
+</dict>
+</plist>

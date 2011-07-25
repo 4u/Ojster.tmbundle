@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;% @require ${1:fullName} %&gt;</string>
+	<key>name</key>
+	<string>@require (goog)</string>
+	<key>scope</key>
+	<string>source.ojst</string>
+	<key>tabTrigger</key>
+	<string>@r</string>
+	<key>uuid</key>
+	<string>0B2B86C2-B07A-4DA6-BE3F-E1955C6D1031</string>
+</dict>
+</plist>

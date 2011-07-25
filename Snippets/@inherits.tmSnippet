@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;% @inherits alias_opt fullName_opt %&gt;
+</string>
+	<key>name</key>
+	<string>@inherits</string>
+	<key>scope</key>
+	<string>source.ojst</string>
+	<key>tabTrigger</key>
+	<string>@i</string>
+	<key>uuid</key>
+	<string>A15ECB89-243D-48C8-9389-D73676340741</string>
+</dict>
+</plist>

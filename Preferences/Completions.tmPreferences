@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Completions</string>
+	<key>scope</key>
+	<string>source.ojst.js, source.ojst.main</string>
+	<key>settings</key>
+	<dict>
+		<key>completions</key>
+		<array>
+			<string>inherits</string>
+			<string>require</string>
+			<string>template</string>
+			<string>block</string>
+		</array>
+	</dict>
+	<key>uuid</key>
+	<string>21511C36-EAF4-478D-AD8D-1207F54A5D9C</string>
+</dict>
+</plist>
