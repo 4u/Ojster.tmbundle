@@ -5,7 +5,7 @@
 	<key>name</key>
 	<string>Comments</string>
 	<key>scope</key>
-	<string>source.ojst</string>
+	<string>source.ojst.block</string>
 	<key>settings</key>
 	<dict>
 		<key>shellVariables</key>
@@ -14,13 +14,13 @@
 				<key>name</key>
 				<string>TM_COMMENT_START</string>
 				<key>value</key>
-				<string>&lt;% /*</string>
+				<string>&lt;% /* %&gt;</string>
 			</dict>
 			<dict>
 				<key>name</key>
 				<string>TM_COMMENT_END</string>
 				<key>value</key>
-				<string>*/ %&gt;</string>
+				<string>&lt;% */ %&gt;</string>
 			</dict>
 		</array>
 	</dict>

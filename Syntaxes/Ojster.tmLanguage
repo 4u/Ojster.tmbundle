@@ -16,6 +16,108 @@
 	<array>
 		<dict>
 			<key>begin</key>
+			<string>(&lt;%)\s+(@block)\s+([\w$]+)\s*{\s*(%&gt;)</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.embedded.ojster</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.ojster</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.embedded.ojster</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(&lt;%)\s+(@block)\s+(\3)?\s*}\s*(%&gt;)</string>
+			<key>name</key>
+			<string>source.ojst.block</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>begin</key>
+					<string>(&lt;%)\s*(@[a-z]+)\s+</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.section.embedded.ojster</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.ojster</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>(%&gt;)</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.section.embedded.ojster</string>
+						</dict>
+					</dict>
+					<key>name</key>
+					<string>source.ojst.main</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>source.js</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>begin</key>
+					<string>(&lt;%(-|=)?)</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.section.embedded.ojster</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>(%&gt;)</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.section.embedded.ojster</string>
+						</dict>
+					</dict>
+					<key>name</key>
+					<string>source.ojst.js</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>source.js</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>text.html.basic</string>
+					<key>name</key>
+					<string>source.ojst.html</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
 			<string>(&lt;%)\s*(@[a-z]+)\s+</string>
 			<key>beginCaptures</key>
 			<dict>
@@ -67,39 +169,10 @@
 			</array>
 		</dict>
 		<dict>
-			<key>begin</key>
-			<string>(&lt;%(-|=)?)</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.section.embedded.ojster</string>
-				</dict>
-			</dict>
-			<key>end</key>
-			<string>(%&gt;)</string>
-			<key>endCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.section.embedded.ojster</string>
-				</dict>
-			</dict>
+			<key>include</key>
+			<string>source.js</string>
 			<key>name</key>
 			<string>source.ojst.js</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>source.js</string>
-				</dict>
-			</array>
-		</dict>
-		<dict>
-			<key>include</key>
-			<string>text.html.basic</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
