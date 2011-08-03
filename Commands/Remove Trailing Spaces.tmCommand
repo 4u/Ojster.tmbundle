@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>beforeRunningCommand</key>
-	<string>saveActiveFile</string>
+	<string>nop</string>
 	<key>command</key>
-	<string>[ -n "$OJSTER_DIR" ] &amp;&amp; [ -d $OJSTER_DIR ] &amp;&amp; ojster $OJSTER_DIR --goog</string>
+	<string>perl -pe 's/[\\t ]+$//g'</string>
 	<key>input</key>
-	<string>none</string>
+	<string>document</string>
 	<key>name</key>
-	<string>Compile</string>
+	<string>Remove Trailing Spaces</string>
 	<key>output</key>
-	<string>showAsTooltip</string>
+	<string>replaceDocument</string>
 	<key>scope</key>
 	<string>source.ojst</string>
 	<key>uuid</key>
-	<string>A1564195-FCFA-4442-A526-D394DF6F0A0E</string>
+	<string>3178A0C1-83FE-4FB7-8A99-4C0C5817C552</string>
 </dict>
 </plist>

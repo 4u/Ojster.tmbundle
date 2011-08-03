@@ -4,6 +4,11 @@
 <dict>
 	<key>mainMenu</key>
 	<dict>
+		<key>excludedItems</key>
+		<array>
+			<string>3178A0C1-83FE-4FB7-8A99-4C0C5817C552</string>
+			<string>E7C7742B-5947-442B-B80B-F90524164E77</string>
+		</array>
 		<key>items</key>
 		<array>
 			<string>A1564195-FCFA-4442-A526-D394DF6F0A0E</string>
@@ -24,6 +29,8 @@
 	<array>
 		<string>5914FA48-99FB-4790-95D4-7ABF198273E1</string>
 		<string>A1564195-FCFA-4442-A526-D394DF6F0A0E</string>
+		<string>3178A0C1-83FE-4FB7-8A99-4C0C5817C552</string>
+		<string>E7C7742B-5947-442B-B80B-F90524164E77</string>
 		<string>436464A9-6F3F-41A4-BB40-FFBE738DA036</string>
 		<string>4629EA7A-D973-4502-B973-7FF29195ECC5</string>
 		<string>0AA26CB8-18B3-4636-B318-6EBF8C5A16C0</string>
