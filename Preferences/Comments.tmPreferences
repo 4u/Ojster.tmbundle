@@ -5,7 +5,7 @@
 	<key>name</key>
 	<string>Comments</string>
 	<key>scope</key>
-	<string>source.ojst.block</string>
+	<string>source.ojst.html, source.ojst.block</string>
 	<key>settings</key>
 	<dict>
 		<key>shellVariables</key>
