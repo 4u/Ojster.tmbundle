@@ -5,7 +5,7 @@
 	<key>beforeRunningCommand</key>
 	<string>saveActiveFile</string>
 	<key>command</key>
-	<string>[ -d $OJSTER_DIR ] &amp;&amp; ojster $OJSTER_DIR --goog</string>
+	<string>[ -n "$OJSTER_DIR" ] &amp;&amp; [ -d $OJSTER_DIR ] &amp;&amp; ojster $OJSTER_DIR --goog</string>
 	<key>input</key>
 	<string>none</string>
 	<key>keyEquivalent</key>
