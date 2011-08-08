@@ -10,7 +10,7 @@
 				<key>beforeRunningCommand</key>
 				<string>nop</string>
 				<key>command</key>
-				<string>perl -pe 's/[\\t ]+$//g'</string>
+				<string>perl -pe 's/[\t ]+$//g'</string>
 				<key>input</key>
 				<string>document</string>
 				<key>output</key>
