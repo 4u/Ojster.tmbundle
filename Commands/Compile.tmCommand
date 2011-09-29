@@ -5,7 +5,36 @@
 	<key>beforeRunningCommand</key>
 	<string>saveActiveFile</string>
 	<key>command</key>
-	<string>[ -n "$OJSTER_DIR" ] &amp;&amp; [ -d $OJSTER_DIR ] &amp;&amp; ojster $OJSTER_DIR --goog</string>
+	<string>#!/usr/bin/env node
+
+var sys = require("sys");
+var exec = require('child_process').exec;
+var fs = require('fs');
+var env = process.env;
+
+var printExec = function (error, stdout, stderr) {
+	if (stdout) {
+		sys.puts(stdout);
+	} else if (stderr) {
+		sys.puts(stderr);
+	} else if (error !== null) {
+		sys.puts(error);
+	}
+};
+
+if (env.OJSTER_DIR) {
+	var stats = fs.lstatSync(env.OJSTER_DIR);
+	if (stats.isDirectory()) {
+		exec('ojster ' + env.OJSTER_DIR + ' --goog', printExec);
+	} else {
+		sys.puts('Error. $OJSTER_DIR {' + env.OJSTER_DIR + '} is not directory.');
+	}
+}
+
+if (env.TM_PROJECT_DIRECTORY &amp;&amp; env.OJSTER_MAKE_COMMAND) {
+	exec('cd ' + env.TM_PROJECT_DIRECTORY + ' &amp;&amp; make ' + env.OJSTER_MAKE_COMMAND, printExec);
+}
+</string>
 	<key>input</key>
 	<string>none</string>
 	<key>name</key>
