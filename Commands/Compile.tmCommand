@@ -7,18 +7,18 @@
 	<key>command</key>
 	<string>#!/usr/bin/env node
 
-var sys = require("sys");
+var util = require("util");
 var exec = require('child_process').exec;
 var fs = require('fs');
 var env = process.env;
 
 var printExec = function (error, stdout, stderr) {
 	if (stdout) {
-		sys.puts(stdout);
+		util.puts(stdout);
 	} else if (stderr) {
-		sys.puts(stderr);
+		util.puts(stderr);
 	} else if (error !== null) {
-		sys.puts(error);
+		util.puts(error);
 	}
 };
 
@@ -27,7 +27,7 @@ if (env.OJSTER_DIR) {
 	if (stats.isDirectory()) {
 		exec('ojster ' + env.OJSTER_DIR + ' --goog', printExec);
 	} else {
-		sys.puts('Error. $OJSTER_DIR {' + env.OJSTER_DIR + '} is not directory.');
+		util.puts('Error. $OJSTER_DIR {' + env.OJSTER_DIR + '} is not directory.');
 	}
 }
 
