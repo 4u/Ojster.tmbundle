@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;% @css ${1:`
+    if [[ $(pbpaste|wc -l) -eq 0 ]]
+        then pbpaste
+        else echo css-class
+    fi
+`} %&gt;</string>
+	<key>name</key>
+	<string>@css</string>
+	<key>scope</key>
+	<string>source.ojst</string>
+	<key>tabTrigger</key>
+	<string>@c</string>
+	<key>uuid</key>
+	<string>14D96866-9D27-4899-8673-0AAA12E15CD5</string>
+</dict>
+</plist>
