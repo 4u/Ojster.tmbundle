@@ -48,7 +48,9 @@ var printExec = function (error, stdout, stderr) {
 	}
 };
 
-if (env.TM_PROJECT_DIRECTORY &amp;&amp; env.OJSTER_MAKE_COMMAND) {
+if (env.TM_PROJECT_DIRECTORY &amp;&amp; env.OJSTER_COMMAND) {
+	exec('cd ' + env.TM_PROJECT_DIRECTORY + ' &amp;&amp; ' + env.OJSTER_COMMAND, printExec);
+} else if (env.TM_PROJECT_DIRECTORY &amp;&amp; env.OJSTER_MAKE_COMMAND) {
 	exec('cd ' + env.TM_PROJECT_DIRECTORY + ' &amp;&amp; make ' + env.OJSTER_MAKE_COMMAND, printExec);
 } else {
 	if ((/\.ojst$/).test(env.TM_FILEPATH)) {
@@ -79,6 +81,6 @@ if (env.TM_PROJECT_DIRECTORY &amp;&amp; env.OJSTER_MAKE_COMMAND) {
 	<key>scope</key>
 	<string>source.ojst</string>
 	<key>uuid</key>
-	<string>EDBF6FC6-A61B-4776-90B4-B6756DF0D0BD</string>
+	<string>8BA0F2C2-7EE7-4F3C-BFB7-361B21C8C802</string>
 </dict>
 </plist>

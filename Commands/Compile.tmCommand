@@ -22,7 +22,9 @@ var printExec = function (error, stdout, stderr) {
 	}
 };
 
-if (env.TM_PROJECT_DIRECTORY &amp;&amp; env.OJSTER_MAKE_COMMAND) {
+if (env.TM_PROJECT_DIRECTORY &amp;&amp; env.OJSTER_COMMAND) {
+	exec('cd ' + env.TM_PROJECT_DIRECTORY + ' &amp;&amp; ' + env.OJSTER_COMMAND, printExec);
+} else if (env.TM_PROJECT_DIRECTORY &amp;&amp; env.OJSTER_MAKE_COMMAND) {
 	exec('cd ' + env.TM_PROJECT_DIRECTORY + ' &amp;&amp; make ' + env.OJSTER_MAKE_COMMAND, printExec);
 } else {
 	if ((/\.ojst$/).test(env.TM_FILEPATH)) {

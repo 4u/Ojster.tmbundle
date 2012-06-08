@@ -1,0 +1,7 @@
+<% @require ojster %>
+
+<% @template MyTemplate %>
+<% @inherits ojster.Template %>
+
+<% @block main { %>
+<% @block main } %>
